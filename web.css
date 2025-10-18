@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0; 
+  text-align: center;
+}
+#ichigo{
+    background-image: url(SargarMe-most-powerfull-bankais-in-bleach-1536x768.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 535px;
+}
+#martiv{
+    text-align: right;
+    font-family: B titr;
+    color: beige;
+}
+
+#abbr{
+    text-align: center;
+    font-size: 100px;
+    font-family: bodoni mt black;
+    border-bottom: none;
+    text-decoration: none;
+    cursor: pointer;
+
+}
