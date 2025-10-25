@@ -1,0 +1,105 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  direction: rtl;
+  font-family: Tahoma, Arial;
+  background-color: #0b0c10;
+  color: #e9e9ef;
+}
+
+header{
+  background-color: #0f0f16;
+  border-bottom: 1px solid #222;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  padding: 8px 0;
+}
+#martiv{
+  text-align: right;
+  font-family: B titr, Tahoma, Arial;
+  color: beige;
+  font-size: 20px;
+  margin: 0 12px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+header a{
+  color: beige;
+  text-decoration: none;
+}
+
+#login-box{
+  display: inline-block;
+  background-color: #14141c;
+  border: 1px solid #222;
+  border-radius: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+  width: 320px;
+  padding: 20px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.field{
+  margin: 10px 0;
+}
+
+label{
+  display: inline-block;
+  margin: 6px 0;
+  color: #b6b6c9;
+  font-size: 14px;
+}
+
+input{
+  width: 260px;
+  height: 38px;
+  padding: 8px 10px;
+  margin: 4px 0;
+  border: 1px solid #222;
+  border-radius: 12px;
+  background-color: #15151f;
+  color: #e9e9ef;
+}
+
+.actions{
+  margin: 14px 0 6px;
+}
+
+button{
+  width: 120px;
+  height: 40px;
+  border: 1px solid #222;
+  border-radius: 14px;
+  background-color: #1a1a26;
+  color: #e9e9ef;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 700;
+}
+button:hover{
+  background-color: #24243a;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+.hint{
+  color: #b6b6c9;
+  font-size: 12px;
+  margin: 6px 0 0;
+}
+
+footer{
+  background-color: #0f0f16;
+  border-top: 1px solid #222;
+  padding: 16px 0;
+}
+.copy{
+  color: #b6b6c9;
+  margin: 0;
+  font-size: 14px;
+}
