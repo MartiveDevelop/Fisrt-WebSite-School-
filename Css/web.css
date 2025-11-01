@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -8,54 +8,56 @@ body{
   color: #e9e9ef;
 }
 
-header{
+header {
   background-color: #0f0f16;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid #222;
   padding: 8px 0;
+  position: relative;
 }
 
-#martiv{
+#martiv {
   text-align: right;
-  font-family: B titr, Tahoma, Arial;
+  font-family: "B Titr", Tahoma, Arial;
   color: beige;
   font-size: 20px;
   margin: 0 12px;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
 
-nav a{
-  color: #e9e9ef;
-  text-decoration: none;
+nav {
+  position: relative;
 }
 
-#menu{
+#menu {
   list-style: none;
   margin: 10px 0 0;
   padding: 0;
   text-align: center;
 }
 
-#menu li{
+#menu li {
   display: inline-block;
   margin: 4px 6px;
 }
 
-#menu a{
+#menu a {
   display: inline-block;
   padding: 10px 12px;
   border-radius: 12px;
   border: 1px solid #222;
   transition: 0.2s;
+  text-decoration: none;
+  color: #e9e9ef;
 }
 
-#menu a:hover{
+#menu a:hover {
   background-color: #1a1a26;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
 
-#search{
+#search {
   padding: 10px 12px;
   width: 180px;
   background-color: #15151f;
@@ -64,8 +66,48 @@ nav a{
   border-radius: 14px;
 }
 
-#ichigo{
-  background-image: url("../Html/SargarMe-most-powerfull-bankais-in-bleach-1536x768.webp");
+#signin {
+  position: absolute;
+  top: 14px;
+  left: 25px;
+  font-size: 20px;
+  color: #e9e9ef;
+  background-color: #1a1a26;
+  border: 1px solid #222;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#signin:hover {
+  background-color: #1e1e2f;
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 0 18px 4px rgba(0, 170, 255, 0.6);
+}
+
+#signin:hover i {
+  color: #00aaff;
+  text-shadow: 0 0 10px rgba(0, 170, 255, 0.8);
+}
+
+#welcome {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  color: #00aaff;
+  font-size: 14px;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+}
+
+#ichigo {
+  background-image: url("../Html/bleach-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,13 +116,13 @@ nav a{
   padding: 30px 10px;
 }
 
-.lead{
+.lead {
   font-size: 18px;
   color: #e9e9ef;
-  text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-#abbr{
+#abbr {
   font-size: 22px;
   font-family: "bodoni mt black", Tahoma, Arial;
   border-bottom: none;
@@ -88,7 +130,7 @@ nav a{
   cursor: pointer;
 }
 
-.btn{
+.btn {
   display: inline-block;
   padding: 12px 18px;
   margin: 10px 0;
@@ -99,38 +141,39 @@ nav a{
   transition: 0.2s;
   text-decoration: none;
 }
-.btn:hover{
+.btn:hover {
   background-color: #24243a;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
 
-#dot{
+#dot {
   width: 60px;
   height: 60px;
   border-radius: 999px;
   background-color: #1a1a26;
   color: #e9e9ef;
   border: 1px solid #222;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   margin: 26px auto 0;
   font-weight: 700;
   cursor: pointer;
   transition: 0.2s;
 }
-#dot:hover{ background-color: #24243a; }
 
-.title{
+#dot:hover { background-color: #24243a; }
+
+.title {
   font-size: 22px;
   font-weight: 700;
   margin: 30px 0 10px;
 }
 
-.cards{
+.cards {
   margin: 0 auto 40px;
 }
 
-.card{
+.card {
   display: inline-block;
   width: 260px;
   height: 160px;
@@ -138,21 +181,75 @@ nav a{
   background-color: #14141c;
   border: 1px solid #222;
   border-radius: 18px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
   overflow: hidden;
 }
-.card img{
+.card img {
   width: 100%;
   height: 100%;
   display: block;
 }
-footer{
+
+#about {
+  background-color: #14141c;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 40px 20px;
+  color: #b6b6c9;
+  text-align: center;
+}
+#about h2 {
+  color: #e9e9ef;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+#about p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 15px;
+  color: #c8c8d8;
+}
+
+footer {
   background-color: #0f0f16;
   border-top: 1px solid #222;
   padding: 16px 0;
 }
-.copy{
+.copy {
   color: #b6b6c9;
   margin: 0;
   font-size: 14px;
 }
+#user-info {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#welcome {
+  color: #00aaff;
+  font-size: 14px;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+}
+
+#logout {
+  background-color: #1a1a26;
+  color: #e9e9ef;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 13px;
+}
+#logout:hover {
+  background-color: #24243a;
+  color: #00aaff;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+}
+
