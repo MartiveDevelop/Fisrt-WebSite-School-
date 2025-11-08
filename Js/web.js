@@ -24,8 +24,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
     const logout = document.getElementById("logout");
     logout.addEventListener("click", () => {
-      localStorage.removeItem("username"); // حذف نام کاربر
-      location.reload(); // رفرش صفحه برای بازگرداندن آیکون
+      localStorage.removeItem("username");
+      location.reload(); 
     });
   }
 });
