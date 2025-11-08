@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PersianShinigami</title>
+  <link rel="stylesheet" href="../Css/web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header id="top">
+    <nav>
+      <!-- 🔹 دکمه ثبت‌نام/ورود -->
+      <a id="signin" href="login.html" title="ورود به حساب">
+        <i class="fa-solid fa-user"></i>
+      </a>
+
+      <h1 id="martiv">
+        <a href="#">ManiMartiveOnfire</a>
+      </h1>
+
+      <!-- فقط گزینه درباره ما -->
+      <ul id="menu">
+        <li><a href="about.html" id="about-link">درباره ما</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔥 پس‌زمینه ایچیگو بدون متن -->
+  <section id="ichigo"></section>
+
+  <footer>
+    <p class="copy">© <span id="y"></span> PersianShinigami</p>
+  </footer>
+
+  <!-- 🔻 منوی کشویی سمت راست -->
+  <div id="side-menu">
+    <div id="menu-content">
+      <a href="edit.html">ادیت</a>
+      <a href="#">کاراکتر</a>
+      <a href="#">بانکای</a>
+    </div>
+  </div>
+
+  <!-- 🔻 دکمه فلش باز/بستن منو -->
+  <button id="menu-toggle">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <script>
+    const menu = document.getElementById("side-menu");
+    const btn = document.getElementById("menu-toggle");
+    const icon = btn.querySelector("i");
+
+    btn.onclick = () => {
+      menu.classList.toggle("open");
+      icon.classList.toggle("fa-chevron-left");
+      icon.classList.toggle("fa-chevron-right");
+    };
+  </script>
+</body>
+</html>
