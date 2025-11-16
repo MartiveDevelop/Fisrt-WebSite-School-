@@ -5,8 +5,8 @@ function login() {
 
   if (u && p && u.value !== "" && p.value !== "") {
     localStorage.setItem("username", u.value);
-    window.location.href = "index.html";
-    window.location.href = "website.html";
+    window.location.href = "../Html/index.html";
+    window.location.href = "../Html/index.html";
   } else {
     if (ok) ok.textContent = "پر کن!";
   }
