@@ -7,10 +7,12 @@
   <link rel="stylesheet" href="../Css/web.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
   <header id="top">
     <nav>
+
       <a id="signin" href="login.html" title="ورود به حساب">
         <i class="fa-solid fa-user"></i>
       </a>
@@ -22,6 +24,7 @@
       <ul id="menu">
         <li><a href="about.html" id="about-link">درباره ما</a></li>
       </ul>
+
     </nav>
   </header>
 
@@ -31,10 +34,14 @@
     <p class="copy">© <span id="y"></span> PersianShinigami</p>
   </footer>
 
+
   <div id="side-menu">
     <div id="menu-content">
+
       <a href="edit.html">ادیت</a>
-      <a href="#">کاراکتر</a>
+
+      <a href="character.html">کاراکتر</a>
+
       <a href="../Html/bankai.html">بانکای</a>
     </div>
   </div>
@@ -42,6 +49,7 @@
   <button id="menu-toggle">
     <i class="fa-solid fa-chevron-left"></i>
   </button>
+
 
   <script>
     const menu = document.getElementById("side-menu");
@@ -53,6 +61,9 @@
       icon.classList.toggle("fa-chevron-left");
       icon.classList.toggle("fa-chevron-right");
     };
+
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
